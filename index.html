@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDN</title>
+
+    <!-- Link to your custom JW Player JS -->
+    <script src="/jw.js"></script>
+
+    <!-- Link to your custom JW Player CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        /* Overall body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #141414;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff3366;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        /* Container styling */
+        .container {
+            text-align: center;
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Buttons styling */
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .cta-buttons button {
+            background-color: #ff3366;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-buttons button:hover {
+            background-color: #e63054;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        footer a {
+            color: #ff3366;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to CDN</h1>
+        <h2>Your Video and Style Content Delivered Here</h2>
+
+        <!-- Buttons to redirect to /jw.js and /style.css -->
+        <div class="cta-buttons">
+            <button onclick="window.location.href='/jw.js'">Go to jw.js</button>
+            <button onclick="window.location.href='/style.css'">Go to style.css</button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 CDN</p>
+        </footer>
+    </div>
+</body>
+</html>
